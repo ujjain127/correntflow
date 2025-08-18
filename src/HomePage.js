@@ -35,7 +35,7 @@ function App() {
             <a href="#features">Features</a>
             <a href="#use-cases">Use Cases</a>
             <a href="#about">About</a>
-            <a href="/careers">Careers</a>
+            <a href="careers.html">Careers</a>
             <a href="#contact" className="nav-cta">Join Waitlist</a>
           </div>
         </div>

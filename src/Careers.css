@@ -1,0 +1,451 @@
+/* Font Imports - matching main site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Custom Font Face for Calvino Grande */
+@font-face {
+  font-family: 'Calvino Grande';
+  src: url('data:font/woff2;base64,') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset and Base Styles - matching main site */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Careers Page Styles */
+.careers-page {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: #212529;
+  font-size: 16px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+/* Navigation - same as main site */
+.navbar {
+  background: #ffffff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo h2 {
+  color: #8B4513;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #8B4513;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #6B2C0C;
+}
+
+.nav-cta {
+  background: #8B4513;
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.nav-cta:hover {
+  background: #6B2C0C !important;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+/* Careers Hero */
+.careers-hero {
+  background: #DEB887;
+  padding: 200px 0 120px;
+  text-align: center;
+}
+
+.careers-hero-content h1 {
+  font-size: 96px;
+  color: #212529;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+  line-height: 1.1;
+}
+
+.careers-subtitle {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.careers-tagline {
+  font-size: 24px;
+  color: #8B4513;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Why Work Section */
+.why-work-section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.why-work-section h2 {
+  font-size: 72px;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 48px;
+}
+
+.benefit-card {
+  padding: 48px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.benefit-card h3 {
+  font-size: 48px;
+  color: #8B4513;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+.benefit-card p {
+  font-size: 24px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Job Openings Section */
+.job-openings-section {
+  padding: 120px 0;
+  background: #f8f9fa;
+}
+
+.job-openings-section h2 {
+  font-size: 72px;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 48px;
+}
+
+.job-card {
+  background: #ffffff;
+  padding: 48px;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.job-header h3 {
+  font-size: 48px;
+  color: #8B4513;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+.job-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.job-meta span {
+  padding: 8px 16px;
+  background: #DEB887;
+  color: #212529;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.job-description {
+  font-size: 24px;
+  color: #6c757d;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.job-details {
+  margin-bottom: 32px;
+}
+
+.job-section {
+  margin-bottom: 24px;
+}
+
+.job-section h4 {
+  font-size: 32px;
+  color: #212529;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.job-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-section li {
+  font-size: 20px;
+  color: #6c757d;
+  margin-bottom: 8px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.job-section li::before {
+  content: "•";
+  color: #8B4513;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.apply-button {
+  background: #8B4513;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.apply-button:hover {
+  background: #6B2C0C;
+}
+
+/* Careers Contact */
+.careers-contact {
+  padding: 120px 0;
+  background: #8B4513;
+  color: white;
+  text-align: center;
+}
+
+.careers-contact h2 {
+  font-size: 72px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+.careers-contact p {
+  font-size: 36px;
+  margin-bottom: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.contact-button {
+  display: inline-block;
+  background: #DEB887;
+  color: #212529;
+  padding: 20px 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background: #D2B48C;
+}
+
+/* Footer */
+.footer {
+  background: #212529;
+  color: white;
+  padding: 80px 0 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.footer-logo h3 {
+  font-size: 48px;
+  color: #DEB887;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+.footer-logo p {
+  font-size: 24px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.footer-section h4 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #DEB887;
+  font-weight: 600;
+}
+
+.footer-section a {
+  display: block;
+  color: #adb5bd;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #DEB887;
+}
+
+.footer-bottom {
+  border-top: 1px solid #495057;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  
+  .nav-container {
+    padding: 0 40px;
+  }
+  
+  .careers-hero-content h1 {
+    font-size: 64px;
+  }
+  
+  .careers-subtitle {
+    font-size: 24px;
+  }
+  
+  .why-work-section h2,
+  .job-openings-section h2,
+  .careers-contact h2 {
+    font-size: 48px;
+  }
+  
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .job-card {
+    padding: 32px;
+  }
+  
+  .job-header h3 {
+    font-size: 36px;
+  }
+  
+  .job-description {
+    font-size: 20px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 36px;
+  }
+  
+  .benefit-card p {
+    font-size: 20px;
+  }
+  
+  .nav-links {
+    gap: 24px;
+  }
+  
+  .nav-links a {
+    font-size: 16px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
