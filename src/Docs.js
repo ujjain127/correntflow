@@ -123,49 +123,62 @@ function Docs() {
         {/* Main Content */}
         <main className="docs-main">
           <div className="docs-content">
-            {/* Header */}
-            <header className="docs-header">
-              <h1>CorrentFlow Studio Documentation</h1>
-              <p className="docs-subtitle">Comprehensive automation platform for data processing, workflow management, and intelligent task orchestration</p>
-            </header>
-
             {/* Overview Section */}
             <section id="overview" className="docs-section">
               <h2>Overview</h2>
+              <p style={{fontSize: "32px", color: "#212529", marginBottom: "48px", lineHeight: "1.7"}}>CorrentFlow Studio is a comprehensive automation platform designed to streamline data processing, workflow management, and intelligent task orchestration. Built with enterprise-grade reliability and intuitive design, it empowers teams to automate complex business processes with ease.</p>
               
-              <p>CorrentFlow Studio is a comprehensive automation platform designed to streamline data processing, workflow management, and intelligent task orchestration. Built with enterprise-grade reliability and intuitive design, it empowers teams to automate complex business processes with ease.</p>
-              
-              <h3>Key Capabilities</h3>
-              <div className="capability-list">
-                <div className="capability-item">
-                  <h4>Visual Workflow Designer</h4>
-                  <p>Drag-and-drop interface for building complex automation workflows without coding. Create sophisticated data pipelines and business process automations with our intuitive visual editor.</p>
-                </div>
+              <div style={{marginBottom: "48px"}}>
+                <h3 style={{fontSize: "48px", color: "#8B4513", marginBottom: "32px", fontFamily: "Bodoni, serif", fontWeight: 700}}>Key Capabilities</h3>
                 
-                <div className="capability-item">
-                  <h4>Intelligent Data Processing</h4>
-                  <p>Advanced data transformation, validation, and enrichment capabilities. Handle multiple data formats, perform complex calculations, and ensure data quality throughout your workflows.</p>
-                </div>
-                
-                <div className="capability-item">
-                  <h4>Enterprise Integrations</h4>
-                  <p>Connect with 200+ enterprise systems including databases, cloud services, APIs, and business applications. Seamlessly integrate with your existing technology stack.</p>
-                </div>
-                
-                <div className="capability-item">
-                  <h4>Real-time Monitoring</h4>
-                  <p>Comprehensive dashboard with real-time workflow monitoring, performance analytics, and intelligent alerting. Track execution status, performance metrics, and resource utilization.</p>
+                <div style={{display: "flex", flexDirection: "column", gap: "40px"}}>
+                  <div style={{borderLeft: "4px solid #8B4513", paddingLeft: "32px"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "38px", fontWeight: 600, marginBottom: "16px"}}>Visual Workflow Designer</h4>
+                    <p style={{color: "#4a5568", fontSize: "28px", lineHeight: "1.6", margin: 0}}>Drag-and-drop interface for building complex automation workflows without coding. Create sophisticated data pipelines and business process automations with our intuitive visual editor.</p>
+                  </div>
+                  
+                  <div style={{borderLeft: "4px solid #8B4513", paddingLeft: "32px"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "38px", fontWeight: 600, marginBottom: "16px"}}>Intelligent Data Processing</h4>
+                    <p style={{color: "#4a5568", fontSize: "28px", lineHeight: "1.6", margin: 0}}>Advanced data transformation, validation, and enrichment capabilities. Handle multiple data formats, perform complex calculations, and ensure data quality throughout your workflows.</p>
+                  </div>
+                  
+                  <div style={{borderLeft: "4px solid #8B4513", paddingLeft: "32px"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "38px", fontWeight: 600, marginBottom: "16px"}}>Enterprise Integrations</h4>
+                    <p style={{color: "#4a5568", fontSize: "28px", lineHeight: "1.6", margin: 0}}>Connect with 200+ enterprise systems including databases, cloud services, APIs, and business applications. Seamlessly integrate with your existing technology stack.</p>
+                  </div>
+                  
+                  <div style={{borderLeft: "4px solid #8B4513", paddingLeft: "32px"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "38px", fontWeight: 600, marginBottom: "16px"}}>Real-time Monitoring</h4>
+                    <p style={{color: "#4a5568", fontSize: "28px", lineHeight: "1.6", margin: 0}}>Comprehensive dashboard with real-time workflow monitoring, performance analytics, and intelligent alerting. Track execution status, performance metrics, and resource utilization.</p>
+                  </div>
                 </div>
               </div>
 
-              <h3>Who Uses CorrentFlow</h3>
-              <ul>
-                <li><strong>Data Teams</strong> - Automate ETL processes, data validation, and reporting workflows</li>
-                <li><strong>Business Analysts</strong> - Create automated reports and data-driven decision workflows</li>
-                <li><strong>Operations Teams</strong> - Streamline repetitive tasks and process automation</li>
-                <li><strong>IT Departments</strong> - Orchestrate system integrations and maintenance workflows</li>
-                <li><strong>Finance Teams</strong> - Automate reconciliation, reporting, and compliance processes</li>
-              </ul>
+              <div>
+                <h3 style={{fontSize: "48px", color: "#8B4513", marginBottom: "32px", fontFamily: "Bodoni, serif", fontWeight: 700}}>Who Uses CorrentFlow</h3>
+                <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "32px"}}>
+                  <div style={{padding: "32px", border: "1px solid #e9ecef", borderRadius: "8px", background: "#fafbfc"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "32px", fontWeight: 600, marginBottom: "16px"}}>Data Teams</h4>
+                    <p style={{color: "#4a5568", fontSize: "24px", margin: 0}}>Automate ETL processes, data validation, and reporting workflows</p>
+                  </div>
+                  <div style={{padding: "32px", border: "1px solid #e9ecef", borderRadius: "8px", background: "#fafbfc"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "32px", fontWeight: 600, marginBottom: "16px"}}>Business Analysts</h4>
+                    <p style={{color: "#4a5568", fontSize: "24px", margin: 0}}>Create automated reports and data-driven decision workflows</p>
+                  </div>
+                  <div style={{padding: "32px", border: "1px solid #e9ecef", borderRadius: "8px", background: "#fafbfc"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "32px", fontWeight: 600, marginBottom: "16px"}}>Operations Teams</h4>
+                    <p style={{color: "#4a5568", fontSize: "24px", margin: 0}}>Streamline repetitive tasks and process automation</p>
+                  </div>
+                  <div style={{padding: "32px", border: "1px solid #e9ecef", borderRadius: "8px", background: "#fafbfc"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "32px", fontWeight: 600, marginBottom: "16px"}}>IT Departments</h4>
+                    <p style={{color: "#4a5568", fontSize: "24px", margin: 0}}>Orchestrate system integrations and maintenance workflows</p>
+                  </div>
+                  <div style={{padding: "32px", border: "1px solid #e9ecef", borderRadius: "8px", background: "#fafbfc"}}>
+                    <h4 style={{color: "#8B4513", fontSize: "32px", fontWeight: 600, marginBottom: "16px"}}>Finance Teams</h4>
+                    <p style={{color: "#4a5568", fontSize: "24px", margin: 0}}>Automate reconciliation, reporting, and compliance processes</p>
+                  </div>
+                </div>
+              </div>
             </section>
 
             {/* Installation Section */}

@@ -150,21 +150,33 @@
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 30px;
+  }
+  
   .nav-links {
-    gap: 24px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .nav-links a {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .nav-cta {
     padding: 8px 16px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .nav-container {
+    gap: 12px;
+  }
+  
   .nav-links {
     gap: 16px;
   }
@@ -174,8 +186,47 @@
   }
   
   .nav-cta {
-    padding: 6px 12px;
+    padding: 6px 14px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 0;
+  }
+  
+  .nav-container {
+    padding: 0 15px;
+    gap: 8px;
+  }
+  
+  .nav-links {
+    gap: 12px;
+  }
+  
+  .nav-links a {
+    font-size: 12px;
+  }
+  
+  .nav-cta {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-links {
+    gap: 8px;
+  }
+  
+  .nav-links a {
+    font-size: 11px;
+  }
+  
+  .nav-cta {
+    padding: 4px 8px;
+    font-size: 11px;
   }
 }
 
@@ -194,6 +245,10 @@
   border-right: 2px solid #e9ecef;
   position: fixed;
   top: 100px;
+  left: 0;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  z-index: 999;
 }
 
 /* Responsive Docs Container */
@@ -206,6 +261,7 @@
   .docs-sidebar {
     width: 320px;
     top: 85px;
+    height: calc(100vh - 85px);
   }
 }
 
@@ -223,6 +279,8 @@
     border-right: none;
     border-bottom: 2px solid #e9ecef;
     height: auto;
+    max-height: 300px;
+    overflow-y: auto;
   }
 }
 
@@ -231,20 +289,25 @@
     margin-top: 60px;
     min-height: calc(100vh - 60px);
   }
+  
+  .docs-sidebar {
+    max-height: 250px;
+  }
 }
 
 /* Custom Scrollbar for Sidebar */
 .docs-sidebar::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 .docs-sidebar::-webkit-scrollbar-track {
   background: #f8f9fa;
+  border-radius: 4px;
 }
 
 .docs-sidebar::-webkit-scrollbar-thumb {
   background: #8B4513;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .docs-sidebar::-webkit-scrollbar-thumb:hover {
@@ -309,15 +372,28 @@
   margin: 0;
 }
 
+
 .sidebar-section li {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: 0.1px;
 }
+
 
 .sidebar-section button {
   background: none;
   border: none;
   color: #495057;
   text-align: left;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 12px 0;
+  transition: color 0.2s, background 0.2s;
+  width: 100%;
+  display: block;
 }
 
 /* Responsive Sidebar */
@@ -327,9 +403,12 @@
   }
   
   .sidebar-section h4 {
-    font-size: 22px;
-    margin-bottom: 24px;
-    padding-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+  }
+  .sidebar-section li {
+    font-size: 26px;
   }
 }
 
@@ -343,13 +422,15 @@
   }
   
   .sidebar-section h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
+    font-size: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
   }
-  
+  .sidebar-section li {
+    font-size: 22px;
+  }
   .sidebar-section h4::after {
-    width: 30px;
+    width: 24px;
   }
 }
 
@@ -363,13 +444,15 @@
   }
   
   .sidebar-section h4 {
-    font-size: 18px;
-    margin-bottom: 16px;
-    padding-bottom: 6px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
   }
-  
+  .sidebar-section li {
+    font-size: 20px;
+  }
   .sidebar-section h4::after {
-    width: 25px;
+    width: 18px;
   }
 }
 
@@ -574,14 +657,14 @@
 }
 
 .docs-section h4 {
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 600;
   color: #495057;
   margin: 48px 0 24px 0;
 }
 
 .docs-section h5 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 600;
   color: #6c757d;
   margin: 32px 0 16px 0;
@@ -590,7 +673,7 @@
 .docs-section p {
   color: #6c757d;
   margin-bottom: 24px;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1.8;
 }
 
@@ -598,11 +681,11 @@
   color: #6c757d;
   margin-bottom: 24px;
   padding-left: 32px;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 .docs-section li {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   line-height: 1.7;
 }
 
