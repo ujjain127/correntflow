@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/correntflow/static/css/main.1c4d4b08.css",
-    "main.js": "/correntflow/static/js/main.fcb865e0.js",
+    "main.js": "/correntflow/static/js/main.fd45533c.js",
     "static/js/453.fcdbbd6c.chunk.js": "/correntflow/static/js/453.fcdbbd6c.chunk.js",
     "index.html": "/correntflow/index.html",
     "main.1c4d4b08.css.map": "/correntflow/static/css/main.1c4d4b08.css.map",
-    "main.fcb865e0.js.map": "/correntflow/static/js/main.fcb865e0.js.map",
+    "main.fd45533c.js.map": "/correntflow/static/js/main.fd45533c.js.map",
     "453.fcdbbd6c.chunk.js.map": "/correntflow/static/js/453.fcdbbd6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c4d4b08.css",
-    "static/js/main.fcb865e0.js"
+    "static/js/main.fd45533c.js"
   ]
 }
