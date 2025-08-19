@@ -1,4 +1,5 @@
 import './Careers.css';
+import { Link } from 'react-router-dom';
 
 function Careers() {
   const jobOpenings = [
@@ -6,6 +7,7 @@ function Careers() {
       id: 1,
       title: "Full Stack Developer",
       description: "Build and maintain our web applications using modern frameworks and technologies.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Experience with React, Angular, and Electron",
         "Strong knowledge of JavaScript, TypeScript, HTML, CSS",
@@ -25,6 +27,7 @@ function Careers() {
       id: 2,
       title: "Data Analyst",
       description: "Transform raw data into actionable insights to drive business decisions.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Strong analytical and statistical skills",
         "Proficiency in SQL, Python, R, or similar",
@@ -44,6 +47,7 @@ function Careers() {
       id: 3,
       title: "Project Manager",
       description: "Lead cross-functional teams to deliver projects on time and within scope.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Strong experience with Agile and Scrum methodologies",
         "PMP, CSM, or equivalent certification preferred",
@@ -63,6 +67,7 @@ function Careers() {
       id: 4,
       title: "ML Engineer",
       description: "Design and implement machine learning models and systems at scale.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Strong background in machine learning and deep learning",
         "Proficiency in Python, TensorFlow, PyTorch, or similar",
@@ -82,6 +87,7 @@ function Careers() {
       id: 5,
       title: "Cloud Developer",
       description: "Build and maintain scalable cloud infrastructure and applications.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Experience with AWS, Azure, or Google Cloud Platform",
         "Proficiency in containerization (Docker, Kubernetes)",
@@ -101,6 +107,7 @@ function Careers() {
       id: 6,
       title: "Designer (Video & Photo)",
       description: "Create compelling visual content across digital and print media.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, After Effects, Premiere)",
         "Strong portfolio demonstrating video and photo editing skills",
@@ -120,6 +127,7 @@ function Careers() {
       id: 7,
       title: "Accountant",
       description: "Manage financial records, reporting, and compliance for the organization.",
+      applyUrl: "https://forms.gle/wopUnk8R2ZciVDif6",
       requirements: [
         "Bachelor's degree in Accounting, Finance, or related field",
         "CPA certification preferred",
@@ -146,7 +154,8 @@ function Careers() {
             <h2>CorrentFlow</h2>
           </div>
           <div className="nav-links">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
+            <Link to="/docs">Docs</Link>
             <a href="#features">Features</a>
             <a href="#about">About</a>
             <a href="#contact" className="nav-cta">Contact</a>
@@ -224,7 +233,12 @@ function Careers() {
                   </div>
                 </div>
                 
-                <button className="apply-button">Apply Now</button>
+                <Link 
+                  to={`/apply?job=${encodeURIComponent(job.title)}`}
+                  className="apply-button"
+                >
+                  Apply Now
+                </Link>
               </div>
             ))}
           </div>
@@ -236,7 +250,7 @@ function Careers() {
         <div className="container">
           <h2>Don't See Your Role?</h2>
           <p>We're always looking for talented individuals to join our team. Send us your resume and let us know how you'd like to contribute to CorrentFlow's mission.</p>
-          <a href="mailto:careers@correntflow.com" className="contact-button">Get in Touch</a>
+          <a href="mailto:correntflow@gmail.com" className="contact-button">Get in Touch</a>
         </div>
       </section>
 

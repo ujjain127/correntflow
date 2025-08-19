@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,9 +34,9 @@ function App() {
           </div>
           <div className="nav-links">
             <a href="#features">Features</a>
-            <a href="#use-cases">Use Cases</a>
+            <Link to="/docs">Docs</Link>
             <a href="#about">About</a>
-            <a href="/careers">Careers</a>
+            <Link to="/careers">Careers</Link>
             <a href="#contact" className="nav-cta">Join Waitlist</a>
           </div>
         </div>

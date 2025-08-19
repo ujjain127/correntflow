@@ -1,8 +1,8 @@
 {
   "name": "datamind-website",
   "version": "0.1.0",
-  "homepage": "https://ujjain127.github.io/correntflow",
   "private": true,
+  "homepage": "https://ujjain127.github.io/correntflow",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.7.0",

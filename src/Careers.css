@@ -49,6 +49,82 @@
   align-items: center;
 }
 
+/* Responsive Navigation */
+@media (max-width: 1400px) {
+  .nav-container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 60px;
+  }
+  
+  .nav-logo h2 {
+    font-size: 44px;
+  }
+  
+  .nav-links {
+    gap: 32px;
+  }
+  
+  .nav-links a {
+    font-size: 20px;
+  }
+  
+  .nav-cta {
+    padding: 12px 24px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 32px;
+  }
+  
+  .nav-logo h2 {
+    font-size: 32px;
+  }
+  
+  .nav-links {
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 16px;
+  }
+  
+  .nav-cta {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+  
+  .nav-logo h2 {
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    gap: 12px;
+  }
+  
+  .nav-links a {
+    font-size: 14px;
+  }
+  
+  .nav-cta {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
 .nav-logo h2 {
   color: #8B4513;
   font-size: 56px;
@@ -99,7 +175,7 @@
 
 /* Careers Hero */
 .careers-hero {
-  background: #DEB887;
+  background: #ffffff;
   padding: 200px 0 120px;
   text-align: center;
 }
@@ -115,7 +191,7 @@
 
 .careers-subtitle {
   font-size: 36px;
-  color: #ffffff;
+  color: #6c757d;
   margin-bottom: 24px;
   max-width: 800px;
   margin-left: auto;
@@ -127,6 +203,79 @@
   color: #8B4513;
   font-weight: 600;
   font-style: italic;
+}
+
+/* Responsive Careers Hero */
+@media (max-width: 1400px) {
+  .careers-hero {
+    padding: 180px 0 100px;
+  }
+  
+  .careers-hero-content h1 {
+    font-size: 84px;
+  }
+  
+  .careers-subtitle {
+    font-size: 32px;
+  }
+  
+  .careers-tagline {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .careers-hero {
+    padding: 140px 0 80px;
+  }
+  
+  .careers-hero-content h1 {
+    font-size: 72px;
+  }
+  
+  .careers-subtitle {
+    font-size: 28px;
+  }
+  
+  .careers-tagline {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-hero {
+    padding: 120px 0 60px;
+  }
+  
+  .careers-hero-content h1 {
+    font-size: 56px;
+  }
+  
+  .careers-subtitle {
+    font-size: 24px;
+  }
+  
+  .careers-tagline {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-hero {
+    padding: 100px 0 50px;
+  }
+  
+  .careers-hero-content h1 {
+    font-size: 44px;
+  }
+  
+  .careers-subtitle {
+    font-size: 20px;
+  }
+  
+  .careers-tagline {
+    font-size: 16px;
+  }
 }
 
 /* Why Work Section */
@@ -142,6 +291,51 @@
   margin-bottom: 80px;
   font-weight: 700;
   font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+/* Responsive Why Work Section */
+@media (max-width: 1400px) {
+  .why-work-section {
+    padding: 100px 0;
+  }
+  
+  .why-work-section h2 {
+    font-size: 64px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-work-section {
+    padding: 80px 0;
+  }
+  
+  .why-work-section h2 {
+    font-size: 56px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-work-section {
+    padding: 60px 0;
+  }
+  
+  .why-work-section h2 {
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-work-section {
+    padding: 50px 0;
+  }
+  
+  .why-work-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 }
 
 .benefits-grid {
@@ -171,6 +365,81 @@
   line-height: 1.5;
 }
 
+/* Responsive Benefits Grid */
+@media (max-width: 1400px) {
+  .benefits-grid {
+    gap: 40px;
+  }
+  
+  .benefit-card {
+    padding: 40px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-card p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+  
+  .benefit-card {
+    padding: 32px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+  
+  .benefit-card p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .benefit-card {
+    padding: 28px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .benefit-card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefit-card {
+    padding: 24px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  
+  .benefit-card p {
+    font-size: 16px;
+  }
+}
+
 /* Job Openings Section */
 .job-openings-section {
   padding: 120px 0;
@@ -184,6 +453,51 @@
   margin-bottom: 80px;
   font-weight: 700;
   font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+}
+
+/* Responsive Job Openings Section */
+@media (max-width: 1400px) {
+  .job-openings-section {
+    padding: 100px 0;
+  }
+  
+  .job-openings-section h2 {
+    font-size: 64px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .job-openings-section {
+    padding: 80px 0;
+  }
+  
+  .job-openings-section h2 {
+    font-size: 56px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-openings-section {
+    padding: 60px 0;
+  }
+  
+  .job-openings-section h2 {
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-openings-section {
+    padding: 50px 0;
+  }
+  
+  .job-openings-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 }
 
 .jobs-grid {
@@ -203,6 +517,46 @@
 .job-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Jobs Grid */
+@media (max-width: 1400px) {
+  .jobs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+  }
+  
+  .job-card {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .jobs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+  }
+  
+  .job-card {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .job-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-card {
+    padding: 20px;
+  }
 }
 
 .job-header h3 {
@@ -272,9 +626,104 @@
   left: 0;
 }
 
+/* Responsive Job Card Content */
+@media (max-width: 1400px) {
+  .job-header h3 {
+    font-size: 42px;
+  }
+  
+  .job-description {
+    font-size: 22px;
+  }
+  
+  .job-section h4 {
+    font-size: 28px;
+  }
+  
+  .job-section li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .job-header h3 {
+    font-size: 36px;
+  }
+  
+  .job-description {
+    font-size: 20px;
+  }
+  
+  .job-section h4 {
+    font-size: 24px;
+  }
+  
+  .job-section li {
+    font-size: 16px;
+  }
+  
+  .job-meta span {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-header h3 {
+    font-size: 32px;
+  }
+  
+  .job-description {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+  
+  .job-section h4 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+  
+  .job-section li {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  
+  .job-meta {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-header h3 {
+    font-size: 28px;
+  }
+  
+  .job-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .job-section h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .job-section li {
+    font-size: 14px;
+    padding-left: 18px;
+  }
+  
+  .job-meta span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
 .apply-button {
+  display: inline-block;
   background: #8B4513;
-  color: white;
+  color: white !important;
   border: none;
   padding: 16px 32px;
   border-radius: 6px;
@@ -283,10 +732,37 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
   width: 100%;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .apply-button:hover {
   background: #6B2C0C;
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Responsive Apply Button */
+@media (max-width: 1024px) {
+  .apply-button {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apply-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
 
 /* Careers Contact */
@@ -448,4 +924,29 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+}
+
+/* Apply button styles */
+.apply-button {
+  display: inline-block;
+  background: #8B4513;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-family: 'Bodoni', 'Bodoni MT', 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.apply-button:hover {
+  background: #6B2C0C;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
 }
